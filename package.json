@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap-xlwings",
+  "description": "A Bootstrap theme for Excel",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve src/index.html --public-url / --dist-dir build",
+    "build": "parcel build src/scss/bootstrap-xlwings.scss --public-url / --dist-dir dist",
+    "test": "npm run build"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}

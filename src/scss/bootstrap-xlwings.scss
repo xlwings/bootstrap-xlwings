@@ -1,0 +1,71 @@
+$primary: #107c41;
+$secondary: #cfcfcf;
+$border-radius: 2px;
+$border-radius-sm: 2px;
+$headings-color: $primary;
+$black: #000000;
+$off-white: #f1efec;
+$white: #ffffff;
+$h1-font-size: 20px;
+$font-size-base: 0.85rem;
+
+@import "bootstrap/scss/bootstrap";
+
+@mixin focus-styles($border-color, $background-color) {
+  background-color: $background-color;
+  box-shadow: none;
+  position: relative;
+  outline: none;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.15em;
+    left: 0.15em;
+    right: 0.15em;
+    bottom: 0.15em;
+    border: 2px solid $border-color;
+    border-radius: $border-radius-sm;
+  }
+}
+
+.btn {
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: none;
+    @include focus-styles($white, $primary);
+  }
+}
+
+.btn-secondary {
+  &:focus,
+  &:active,
+  &.active {
+    @include focus-styles($black, $secondary);
+  }
+}
+
+.btn-outline-secondary {
+  color: $black;
+
+  &:hover,
+  &:active,
+  &.active {
+    background-color: $off-white;
+  }
+  &:focus,
+  &:active,
+  &.active {
+    @include focus-styles($black, $white);
+  }
+}
+
+.btn-xl-alert {
+  @extend .btn-sm;
+  width: 80px;
+}

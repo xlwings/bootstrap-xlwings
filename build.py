@@ -27,7 +27,7 @@ def prepend_license(path):
             """\
             @charset "UTF-8";/*!
             * Bootstrap-xlwings v5.2.3-1
-            * Copyright 2022 Zoomer Analytics GmbH
+            * Copyright 2023 Zoomer Analytics GmbH
             * Licensed under MIT
             * Based on Bootstrap
             *//*!

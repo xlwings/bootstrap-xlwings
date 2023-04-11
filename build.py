@@ -26,7 +26,7 @@ def prepend_license(path):
         dedent(
             """\
             @charset "UTF-8";/*!
-            * Bootstrap-xlwings v5.2.3-1
+            * Bootstrap-xlwings v5.2.3-2
             * Copyright 2023 Zoomer Analytics GmbH
             * Licensed under MIT
             * Based on Bootstrap
@@ -51,6 +51,9 @@ def build():
     print(npm_run_build())
     prepend_license(f"{target_dir}/bootstrap-xlwings.css")
     os.rename(f"{target_dir}/bootstrap-xlwings.css", f"{target_dir}/bootstrap-xlwings.min.css")
+    content = Path(f"{target_dir}/bootstrap-xlwings.min.css").read_text()
+    content = content.replace('bootstrap-xlwings.css.map', 'bootstrap-xlwings.min.css.map')
+    Path(f"{target_dir}/bootstrap-xlwings.min.css").write_text(content)
     os.rename(f"{target_dir}/bootstrap-xlwings.css.map", f"{target_dir}/bootstrap-xlwings.min.css.map")
 
 

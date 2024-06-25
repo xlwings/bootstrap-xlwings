@@ -33,7 +33,7 @@ $font-size-base: 0.85rem;
   font-size: 0.95rem;
 }
 
-.btn-primary {
+.btn-primary:not(.dropdown-toggle) {
   &:focus,
   &:active,
   &.active {
@@ -42,7 +42,7 @@ $font-size-base: 0.85rem;
   }
 }
 
-.btn-secondary {
+.btn-secondary:not(.dropdown-toggle) {
   &:focus,
   &:active,
   &.active {

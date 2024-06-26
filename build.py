@@ -26,12 +26,12 @@ def prepend_license(path):
         dedent(
             """\
             @charset "UTF-8";/*!
-            * Bootstrap-xlwings v5.2.3-2
+            * Bootstrap-xlwings v5.3.3-1
             * Copyright 2023 Zoomer Analytics GmbH
             * Licensed under MIT
             * Based on Bootstrap
             *//*!
-            * Bootstrap v5.2.3 (https://getbootstrap.com/)
+            * Bootstrap v5.3.3 (https://getbootstrap.com/)
             * Copyright 2011-2022 The Bootstrap Authors
             * Copyright 2011-2022 Twitter, Inc.
             * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)

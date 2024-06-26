@@ -7,7 +7,7 @@ Bootstrap-xlwings is a Bootstrap theme made for Office.js add-ins in Excel. It's
 In your HTML file, add the following in the `<head>` section (check the Release page for older versions):
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlwings/bootstrap-xlwings@5.2.3-2/dist/bootstrap-xlwings.min.css" integrity="sha384-TZ8CaOSXLBEEL73Aw1vX6a/2YP7QHdiuilF2C8Put8X81F3FzyRgt9ba77CMKAXq" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlwings/bootstrap-xlwings@5.3.3-1/dist/bootstrap-xlwings.min.css">
 ```
 
 If you don't want to use a CDN, you can also download the files from the ``dist`` directory and reference `bootstrap-xlwings.min.css` locally.
@@ -30,7 +30,7 @@ Then open http://localhost:1234 to see the example page. Changes to `bootstrap-x
 
 ## Production build
 
-To build the production CSS file, run (this requires Python):
+To build the production CSS file, updated the version numbers in `build.py` and run (this requires Python):
 
 ```sh
 python build.py

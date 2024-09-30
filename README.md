@@ -30,7 +30,7 @@ Then open http://localhost:1234 to see the example page. Changes to `bootstrap-x
 
 ## Production build
 
-To build the production CSS file, updated the version numbers in `build.py` and run (this requires Python):
+To build the production CSS file, update the version numbers in `build.py` and run (this requires Python):
 
 ```sh
 python build.py

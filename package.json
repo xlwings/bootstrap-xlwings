@@ -1,5 +1,6 @@
 {
   "name": "bootstrap-xlwings",
+  "version": "5.3.3-2",
   "description": "A Bootstrap theme for Excel",
   "license": "MIT",
   "scripts": {
